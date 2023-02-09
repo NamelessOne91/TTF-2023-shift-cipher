@@ -1,3 +1,6 @@
+from dotenv import load_dotenv
+import os
+
 
 def encrypt(text: str, key: int) -> str:
     """Applies a shift cipher (also known as Caesar cipher) to the input text,
@@ -8,11 +11,18 @@ def encrypt(text: str, key: int) -> str:
 
 
 def _main():
+    load_dotenv()
     # read your secret encryption key from the .env file
+    k = os.getenv("CIPHER_KEY")
+    print(type(k))
     # read from encrypt_input.txt
+    with open("./encryption/encrypt_input.txt") as input:
+        print(input.readlines())
     # call encrypt on each line with your key
-    # write the encrypted lines to encrypt_output.txt
-    pass
+    # write the encrypted lines to encrypt_output.txtc
+    with open("./encryption/encrypt_output.txt", "w") as output:
+        output.write("TEST")
+   
 
 
 if __name__ == "__main__":
