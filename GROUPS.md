@@ -34,6 +34,4 @@ Riccardo Morandotti - Rickymora
 Andrea Zani - zazzoh
 Matteo Gandelli - ndoga
 Riccardo Leonardi - 
-Paolo Laganà - 
-
-TEST
+Paolo Laganà -
