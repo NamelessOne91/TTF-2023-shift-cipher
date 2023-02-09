@@ -4,12 +4,10 @@ Paolo Invernizzi - PInve
 
 # Gruppo1
 
-Andro ibrahim - full01n
+Mathias Carrera - full01n
 
 Giovanni Gavioli - Gilibenzio
 
-Gianmarco Azori - ishek01 
+Gianmarco Azori - ishek01
 
-
-
-
+Andro Ibrahim - andro2809
