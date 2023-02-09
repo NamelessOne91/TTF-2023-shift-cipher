@@ -2,5 +2,3 @@
 # Alessandro Luvoni - lvvotech
 # Manuel Gaida - Annibal14
 # Davide De Salve - Giugiaggiuge21
-
-Paolo Invernizzi - PInve
