@@ -1,3 +1,8 @@
-# Teacher
+# Gruppo 4
 
-Paolo Invernizzi - PInve
+Simone Albertini - ShiSimo
+Riccardo Morandotti - Rickymora
+Andrea Zani - zazzoh
+Matteo Gandelli - ndoga
+Riccardo Leonardi - 
+Paolo Laganà - 
