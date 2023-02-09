@@ -13,6 +13,13 @@ Gianmarco Azori - ishek01
 
 Andro Ibrahim - andro2809
 
+# Gruppo 2
+
+Matteo Ratti - F3ndyy
+Alessandro Luvoni - lvvotech
+Manuel Gaida - Annibal14
+Davide De Salve - Giugiaggiuge21
+
 # GRUPPO 3
 
 Davide Biancato 	- ffaradd
