@@ -37,11 +37,11 @@ def test_raise_value_error_for_negative_key():
 
 def test_raise_value_error_for_none_text():
     with pytest.raises(ValueError):
-        encrypt(None, -1)
+        encrypt(None, 0)
 
 def test_raise_value_error_for_text_not_string():
     with pytest.raises(ValueError):
-        encrypt(["test", "test"], -1)
+        encrypt(["test", "test"], 0)
 
 def test_raise_value_error_for_key_not_int():
     with pytest.raises(ValueError):

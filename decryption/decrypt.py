@@ -7,6 +7,8 @@ def decrypt(text: str, key: int) -> str:
     by rotating it RIGHT of key number of positions.
     Returns the rotated text.
     """
+    if type(text) is not str:
+        raise ValueError("text must be a string")
     if type(key) is not int or key < 0:
         raise ValueError("key must be >= 0")
 
