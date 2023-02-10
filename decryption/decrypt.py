@@ -1,5 +1,6 @@
-
+from dotenv import load_dotenv
 from string import ascii_lowercase
+import os
 
 
 def decrypt(text: str, key: int) -> str:
@@ -19,11 +20,16 @@ def decrypt(text: str, key: int) -> str:
 
 
 def _main():
-    # read your secret encryption key from the .env file
+    load_dotenv()
+    k = int(os.getenv("CIPHER_KEY"))
     # read from decrypt_input.txt ---> encrypted with key 3
-    # call decrypt on each line with your key
-    # write the decrypted lines to decrypt_output.txt
-    pass
+    with open("./decryption/decrypt_input.txt") as input:
+        with open("./decryption/decrypt_output.txt", "w") as output:
+            for line in input.readlines():
+                # call decrypt on each line with your key
+                decrypted = decrypt(line, k)
+                # write the decrypted lines to decrypt_output.txt
+                output.write(decrypted)
 
 
 if __name__ == "__main__":

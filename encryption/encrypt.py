@@ -1,6 +1,6 @@
 from dotenv import load_dotenv
 from string import ascii_lowercase
-
+import os
 
 
 def encrypt(text: str, key: int) -> str:
@@ -19,14 +19,18 @@ def encrypt(text: str, key: int) -> str:
     return text.translate(table)
 
 
-
 def _main():
+    load_dotenv()
     # read your secret encryption key from the .env file
+    k = int(os.getenv("CIPHER_KEY"))
     # read from encrypt_input.txt
-    # call encrypt on each line with your key
-    # write the encrypted lines to encrypt_output.txtc
-   pass
-   
+    with open("./encryption/encrypt_input.txt") as input:
+        with open("./encryption/encrypt_output.txt", "w") as output:
+            for line in input.readlines():
+                # call encrypt on each line with your key
+                encrypted = encrypt(line, k)
+                # write the encrypted lines to encrypt_output.txtc
+                output.write(encrypted)
 
 
 if __name__ == "__main__":
